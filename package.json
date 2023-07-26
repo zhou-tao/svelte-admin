@@ -1,0 +1,52 @@
+{
+  "name": "svelte-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "postinstall": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "node build/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*.{svelte,ts}": "eslint --fix"
+  },
+  "devDependencies": {
+    "@iconify-json/ep": "^1.1.11",
+    "@iconify/utils": "^2.1.7",
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "@tsconfig/svelte": "^5.0.0",
+    "@types/node": "^20.4.5",
+    "@typescript-eslint/eslint-plugin": "^6.2.0",
+    "@typescript-eslint/parser": "^6.2.0",
+    "@unocss/reset": "^0.53.6",
+    "@vitejs/plugin-legacy": "^4.1.1",
+    "chalk": "^5.3.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-svelte": "^2.32.4",
+    "lint-staged": "^13.2.3",
+    "plop": "^3.1.2",
+    "sass": "^1.64.1",
+    "simple-git-hooks": "^2.9.0",
+    "svelte": "^4.0.5",
+    "svelte-check": "^3.4.6",
+    "terser": "^5.19.2",
+    "tslib": "^2.6.0",
+    "typescript": "^5.0.2",
+    "unocss": "^0.53.6",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "svelte-spa-router": "^3.3.0"
+  }
+}
