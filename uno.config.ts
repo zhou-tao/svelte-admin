@@ -1,14 +1,18 @@
 import { FileSystemIconLoader } from '@iconify/utils/lib/loader/node-loaders'
-import { 
-  defineConfig, 
+import {
+  defineConfig,
   presetAttributify,
   presetUno,
   presetIcons,
   transformerVariantGroup,
   transformerDirectives
 } from 'unocss'
+import extractorSvelte from '@unocss/extractor-svelte'
 
 export default defineConfig({
+  extractors: [
+    extractorSvelte()
+  ],
   theme: {
     colors: {
       root_light: '#f5f6fa', // 最底层背景
@@ -34,7 +38,7 @@ export default defineConfig({
     'flex-center': 'flex justify-center items-center',
     'transition-base': 'transition-all duration-150 ease-in-out',
     'page-base': 'min-h-content overflow-x-hidden box-border',
-    'page-card': 'page-base bg-page rounded px-6 py-5',
+    'page-card': 'page-base bg-page rounded px-6 py-5'
   },
   rules: [
     [
@@ -75,9 +79,9 @@ export default defineConfig({
         app: FileSystemIconLoader('./src/assets/icon')
       },
       extraProperties: {
-        display: 'inline-block',
+        'display': 'inline-block',
         'vertical-align': 'middle',
-        margin: '0 4px'
+        'margin': '0 4px'
       }
     })
   ],
@@ -89,5 +93,5 @@ export default defineConfig({
     'i-ep-menu',
     'i-ep-avatar',
     'i-ep-info-filled'
-  ],
+  ]
 })

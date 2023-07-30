@@ -5,5 +5,5 @@ import '@unocss/reset/tailwind-compat.css'
 import 'uno.css'
 
 export default new App({
-  target: document.getElementById('app'),
+  target: document.getElementById('app')
 })
