@@ -2,10 +2,15 @@
 /// <reference types="vite/client" />
 /// <reference types="unocss/vite" />
 
-interface ImportMetaEnv {
-  readonly VITE_PORT: string
-  readonly VITE_PUBLIC_PATH: string
-  // 更多环境变量...
+declare interface ViteEnv {
+  VITE_PORT: number
+  VITE_PUBLIC_PATH: string
+  VITE_USE_LEGACY: boolean
+}
+
+interface ImportMetaEnv
+  extends Readonly<Record<keyof ViteEnv, string>> {
+  __: never
 }
 
 interface ImportMeta {

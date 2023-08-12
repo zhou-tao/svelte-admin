@@ -1,20 +1,17 @@
+import type { PluginOption } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
-import unocss from 'unocss/vite'
-import extractorSvelte from '@unocss/extractor-svelte'
 import legacy from '@vitejs/plugin-legacy'
 import { configAutoImport } from './auto-imports'
+import { configUnocss } from './unocss'
 
-export const createVitePlugins = (viteEnv, isBuild) => {
+export const createVitePlugins = (viteEnv: ViteEnv, isBuild: boolean) => {
   const { VITE_USE_LEGACY } = viteEnv
 
-  const vitePlugins = [
+  const vitePlugins: PluginOption = [
     svelte(),
 
     // unocss 配置
-    unocss({
-      // mode: '@unocss/svelte-scoped',
-      extractors: [extractorSvelte()]
-    }),
+    configUnocss(),
 
     // element-plus 自动导入
     configAutoImport()

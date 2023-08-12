@@ -1,8 +1,8 @@
 <script lang="ts">
   import Router from 'svelte-spa-router'
-  import routes from './router'
+  import { RootRoutes } from './router'
 </script>
 
 <main>
-  <Router {routes} />
+  <Router routes={RootRoutes} />
 </main>

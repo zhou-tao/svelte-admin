@@ -17,5 +17,13 @@
       "#/*": ["types/*"]
     }
   },
-  "include": ["types/**/*.d.ts", "src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.svelte",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "build/**/*.ts",
+    "vite.config.ts"
+  ]
 }
