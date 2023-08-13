@@ -13,8 +13,9 @@
     "postinstall": "simple-git-hooks"
   },
   "dependencies": {
-    "@casual-ui/svelte": "^0.10.1",
+    "@casual-ui/svelte": "^0.10.2",
     "axios": "^1.4.0",
+    "js-cookie": "^3.0.5",
     "svelte-spa-router": "^3.3.0"
   },
   "devDependencies": {
@@ -23,6 +24,7 @@
     "@sveltejs/vite-plugin-svelte": "^2.4.2",
     "@toryz/eslint-config-svelte": "^0.1.3",
     "@tsconfig/svelte": "^5.0.0",
+    "@types/autoprefixer": "^10.2.0",
     "@types/node": "^20.4.5",
     "@unocss/extractor-svelte": "^0.53.6",
     "@unocss/reset": "^0.53.6",
@@ -40,7 +42,7 @@
     "tslib": "^2.6.0",
     "typescript": "^5.0.2",
     "unocss": "^0.53.6",
-    "unplugin-vue-components": "^0.25.1",
+    "unplugin-svelte-components": "^0.2.10",
     "vite": "^4.4.7"
   },
   "simple-git-hooks": {

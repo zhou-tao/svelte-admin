@@ -21,7 +21,10 @@ export default defineConfig({
       page_dark: '#18181B',
       primary: '#377dff',
       regular: '#606266',
-      placeholder: '#a8abb2'
+      regular_dark: '#CFD3DC',
+      placeholder: '#a8abb2',
+      light: '#f4f4f5',
+      light_hover: '#e9e9eb'
     },
     height: {
       header: '64px',
@@ -76,7 +79,7 @@ export default defineConfig({
     presetIcons({
       warn: true,
       collections: {
-        app: FileSystemIconLoader('./src/assets/icon')
+        app: FileSystemIconLoader('./src/assets/icons')
       },
       extraProperties: {
         'display': 'inline-block',

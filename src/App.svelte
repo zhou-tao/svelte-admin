@@ -3,6 +3,4 @@
   import { RootRoutes } from './router'
 </script>
 
-<main>
-  <Router routes={RootRoutes} />
-</main>
+<Router routes={RootRoutes} />

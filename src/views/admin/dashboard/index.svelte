@@ -1,1 +1,1 @@
-<div>Dashboard</div>
+<div class="page-card">Dashboard</div>

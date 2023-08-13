@@ -1,4 +1,13 @@
 {
   "root": true,
-  "extends": "@toryz/svelte"
+  "extends": "@toryz/svelte",
+  "rules": {
+    "@typescript-eslint/ban-types": "off",
+    "svelte/valid-compile": [
+      "error",
+      {
+        "ignoreWarnings": true
+      }
+    ]
+  }
 }

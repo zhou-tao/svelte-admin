@@ -40,7 +40,7 @@
 </script>
 
 <div
-  class="w-23rem bg-#ffffff90 p-(x-8 y-6) rounded-xl shadow-xl"
+  class="w-25rem bg-#ffffff90 p-(x-8 y-6) rounded-xl shadow-xl dark:bg-#22222290"
 >
   <h1 class="text-(3xl brand-gradient center) font-(bold mono) m-(t-lg b-0) select-none">
     svelte-starter
@@ -52,13 +52,14 @@
       value={loginForm}
       {rules}
     >
-      <CFormItem field="username" col={12}>
-        <CInput rounded bind:value={loginForm.username} placeholder="账号" />
+      <CFormItem label="" labelAlign="left" labelWidth="0" labelDirection="column" field="username" col={12}>
+        <CInput rounded clearable bind:value={loginForm.username} placeholder="账号" />
       </CFormItem>
-      <CFormItem field="password" col={12}>
-        <CInput rounded bind:value={loginForm.password} placeholder="密码" />
+      <CFormItem label="" labelAlign="left" labelWidth="0" labelDirection="column" field="password" col={12}>
+        <!-- type="password"  not working -->
+        <CInput rounded clearable bind:value={loginForm.password} placeholder="密码" />
       </CFormItem>
-      <CFormItem col={12}>
+      <CFormItem label="" labelAlign="left" labelWidth="0" labelDirection="row" field="" col={12}>
         <div class="w-full flex-center justify-between">
           <CCheckbox bind:value={loginForm.rememberMe} label="记住密码" />
           <span
@@ -69,7 +70,7 @@
         </div>
       </CFormItem>
     </CForm>
-    <div class="mt-6 w-full">
+    <div class="mt-8 w-full">
       <CButton block rounded on:click={doLogin} {loading}>登录</CButton>
     </div>
   </div>

@@ -1,0 +1,11 @@
+html, body, #app {
+  @apply h-full;
+}
+
+.icon-view {
+  @apply w-8 h-8 rounded-full flex-center bg-light cursor-pointer text-18px transition-base;
+
+  &:hover {
+    @apply bg-light_hover;
+  }
+}
