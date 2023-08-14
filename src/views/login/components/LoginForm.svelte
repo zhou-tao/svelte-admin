@@ -43,7 +43,7 @@
   class="w-25rem bg-#ffffff90 p-(x-8 y-6) rounded-xl shadow-xl dark:bg-#22222290"
 >
   <h1 class="text-(3xl brand-gradient center) font-(bold mono) m-(t-lg b-0) select-none">
-    svelte-starter
+    Svelte Admin
   </h1>
   <div class="mt-8 flex-(~ col)">
     <CForm

@@ -9,7 +9,7 @@
     <h1
       class="text-(xl main) ml-2 font-(bold mono) whitespace-nowrap select-none"
     >
-      svelte starter
+      Svelte Admin
     </h1>
   {/if}
 </div>
