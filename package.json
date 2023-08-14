@@ -1,10 +1,10 @@
 {
-  "name": "svelte-starter",
+  "name": "svelte-admin",
   "type": "module",
-  "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
+    "plop": "plop",
     "build": "vite build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
@@ -50,6 +50,11 @@
     "commit-msg": "node build/verifyCommit.js"
   },
   "lint-staged": {
-    "*.{svelte,ts}": "eslint --fix"
-  }
+    "*": "eslint --fix"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "not dead"
+  ]
 }
