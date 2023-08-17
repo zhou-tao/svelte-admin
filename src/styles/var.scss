@@ -1,39 +1,11 @@
-@use "sass:color";
-
-// svelte theme
-$primary: #377dff;
-$primary-lighter: color.adjust($primary, $lightness: 2%, $alpha: -0.1);
-$primary-lighter2: color.adjust($primary, $lightness: 5%);
-$primary-pale: lighten($primary, 32%);
-$primary-pale-darker: color.adjust($primary, $lightness: 5%, $alpha: -0.9);
-$primary-darker: color.adjust($primary, $lightness: -5%, $alpha: 0.1);
-
-$border: #dcdfe6;
-$border-hover: #c0c4cc;
-
-:root, html.dark {
-  --casual-primary: #{$primary};
-  --casual-primary-darker: #{$primary-darker};
-  --casual-primary-lighter: #{$primary-lighter};
-  --casual-primary-lighter2: #{$primary-lighter2};
-  --casual-primary-pale: #{$primary-pale};
-  --casual-primary-pale-darker: #{$primary-pale-darker};
-
-  --casual-copywriting-normal: #606266;
+:root {
+  --app-light-8: #e9e9eb;
+  --app-light-9: #f4f4f5;
+  --app-border-color: #dcdfe6;
 }
 
-.c-input {
-  @apply border-(1px solid #ededed) dark:b-#4C4D4F rounded;
-
-  &:not(.c-input--custom-color) {
-    background: none;
-  }
-
-  &:hover {
-    background: none !important;
-  }
-}
-
-.c-checkbox--check-wrapper {
-  @apply border-#c0c4cc;
+html.dark {
+  --app-light-8: #2d2d2f;
+  --app-light-9: #202121;
+  --app-border-color: #4C4D4F;
 }

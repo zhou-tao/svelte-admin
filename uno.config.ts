@@ -23,8 +23,8 @@ export default defineConfig({
       regular: '#606266',
       regular_dark: '#CFD3DC',
       placeholder: '#a8abb2',
-      light: '#f4f4f5',
-      light_hover: '#e9e9eb'
+      light: 'var(--app-light-9)',
+      light_hover: 'var(--app-light-8)'
     },
     height: {
       header: '64px',

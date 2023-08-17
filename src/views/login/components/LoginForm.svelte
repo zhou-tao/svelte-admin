@@ -60,7 +60,7 @@
         <CInput rounded clearable bind:value={loginForm.password} placeholder="密码" />
       </CFormItem>
       <CFormItem label="" labelAlign="left" labelWidth="0" labelDirection="row" field="" col={12}>
-        <div class="w-full flex-center justify-between">
+        <div class="w-full flex-center justify-between -ml-12px">
           <CCheckbox bind:value={loginForm.rememberMe} label="记住密码" />
           <span
             class="text-(sm primary) cursor-pointer"

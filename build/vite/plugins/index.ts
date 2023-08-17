@@ -1,15 +1,20 @@
 import type { PluginOption } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
+import envParser from 'vite-plugin-env-parser'
 import legacy from '@vitejs/plugin-legacy'
 
 // import { configAutoImport } from './auto-imports'
 import { configUnocss } from './unocss'
 
-export const createVitePlugins = (viteEnv: ViteEnv, isBuild: boolean) => {
+export const createVitePlugins = (viteEnv: Record<string, any>, isBuild: boolean) => {
   const { VITE_USE_LEGACY } = viteEnv
 
   const vitePlugins: PluginOption = [
     svelte(),
+
+    envParser({
+      dts: 'types/env.d.ts'
+    }),
 
     // unocss 配置
     configUnocss()

@@ -1,0 +1,54 @@
+@use "sass:color";
+@use "var.scss";
+
+// casual-ui theme
+$primary: #377dff;
+$primary-lighter: color.adjust($primary, $lightness: 2%, $alpha: -0.1);
+$primary-lighter2: color.adjust($primary, $lightness: 5%);
+$primary-pale: lighten($primary, 32%);
+$primary-pale-darker: color.adjust($primary, $lightness: 5%, $alpha: -0.9);
+$primary-darker: color.adjust($primary, $lightness: -5%, $alpha: 0.1);
+
+$border: #dcdfe6;
+$border-hover: #c0c4cc;
+
+:root, html.dark {
+  --casual-primary: #{$primary};
+  --casual-primary-darker: #{$primary-darker};
+  --casual-primary-lighter: #{$primary-lighter};
+  --casual-primary-lighter2: #{$primary-lighter2};
+  --casual-primary-pale: #{$primary-pale};
+  --casual-primary-pale-darker: #{$primary-pale-darker};
+}
+
+:root {
+  --casual-copywriting-normal: #606266;
+  --casual-input-placeholder: #a8abb2;
+}
+
+html.dark {
+  --casual-copywriting-normal: #CFD3DC;
+  --casual-input-placeholder: #8D9095;
+}
+
+.c-input {
+  @apply border-(1px solid) rounded;
+  border-color: var(--app-border-color);
+
+  &:not(.c-input--custom-color) {
+    background: none;
+  }
+
+  &:hover {
+    background: none !important;
+  }
+}
+
+.c-checkbox {
+  &--check-wrapper {
+    border-color: var(--app-border-color);
+  }
+  &--label {
+    @apply ml-8px;
+  }
+}
