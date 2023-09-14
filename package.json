@@ -44,7 +44,7 @@
     "unocss": "^0.53.6",
     "unplugin-svelte-components": "^0.2.10",
     "vite": "^4.4.7",
-    "vite-plugin-env-parser": "^0.3.0"
+    "vite-plugin-env-parser": "^0.4.1"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
