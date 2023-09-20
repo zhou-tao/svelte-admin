@@ -1,0 +1,36 @@
+// element-plus theme
+:root {
+  --primary: #377dff;
+  --success: #67C23A;
+  --warning: #E6A23C;
+  --danger: #F56C6C;
+  --info: #909399;
+  --black: #000000;
+  --white: #ffffff;
+  --transparent: transparent;
+
+  --text-primary: #E5EAF3;
+  --text-regular: #CFD3DC;
+  --text-secondary: #A3A6AD;
+  --text-placeholder: #8D9095;
+  --text-disabled: #6C6E72;
+
+  --border-darker: #636466;
+  --border-dark: #58585B;
+  --border-base: #4C4D4F;
+  --border-light: #414243;
+  --border-lighter: #363637;
+  --border-extra-light: #2B2B2C;
+
+  --fill-darker: #424243;
+  --fill-dark: #39393A;
+  --fill-base: #303030;
+  --fill-light: #262727;
+  --fill-lighter: #1D1D1D;
+  --fill-extra-light: #191919;
+  --fill-blank: var(--transparent);
+
+  --bg-page: #0A0A0A;
+  --bg-base: #141414;
+  --bg-overlay: #1D1E1F;
+}

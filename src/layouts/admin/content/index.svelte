@@ -3,6 +3,6 @@
   import { AdminRoutes } from '@/router'
 </script>
 
-<main class="p3">
+<main class="p3 pb0">
   <Router prefix="/admin" routes={AdminRoutes} />
 </main>
