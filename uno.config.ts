@@ -91,10 +91,5 @@ export default defineConfig({
   transformers: [
     transformerDirectives(),
     transformerVariantGroup()
-  ],
-  safelist: [
-    'i-ep-menu',
-    'i-ep-avatar',
-    'i-ep-info-filled'
   ]
 })

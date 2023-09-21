@@ -2,6 +2,7 @@
   "root": true,
   "extends": "@toryz/svelte",
   "rules": {
+    "no-undef-init": "off",
     "@typescript-eslint/ban-types": "off",
     "svelte/valid-compile": [
       "error",
